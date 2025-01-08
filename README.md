@@ -1,79 +1,82 @@
-# Vuetify (Default)
+# 🎮 Flag Guessing Game
 
-This is the official scaffolding tool for Vuetify, designed to give you a head start in building your new Vuetify application. It sets up a base template with all the necessary configurations and standard directory structure, enabling you to begin development without the hassle of setting up the project from scratch.
+Um jogo interativo de adivinhação de bandeiras com estilo terminal/hacker, desenvolvido com Vue.js e Vuetify.
 
-## ❗️ Important Links
+![Preview do Jogo](/api/placeholder/800/400)
 
-- 📄 [Docs](https://vuetifyjs.com/)
-- 🚨 [Issues](https://issues.vuetifyjs.com/)
-- 🏬 [Store](https://store.vuetifyjs.com/)
-- 🎮 [Playground](https://play.vuetifyjs.com/)
-- 💬 [Discord](https://community.vuetifyjs.com)
+## 📋 Índice
 
-## 💿 Install
+- [Sobre o Projeto](#sobre-o-projeto)
+- [Funcionalidades](#funcionalidades)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Instalação](#instalação)
+- [Como Jogar](#como-jogar)
+- [API](#api)
 
-Set up your project using your preferred package manager. Use the corresponding command to install the dependencies:
+## 🎯 Sobre o Projeto
 
-| Package Manager                                                | Command        |
-|---------------------------------------------------------------|----------------|
-| [yarn](https://yarnpkg.com/getting-started)                   | `yarn install` |
-| [npm](https://docs.npmjs.com/cli/v7/commands/npm-install)     | `npm install`  |
-| [pnpm](https://pnpm.io/installation)                          | `pnpm install` |
-| [bun](https://bun.sh/#getting-started)                        | `bun install`  |
+O Flag Guessing Game é um jogo educativo onde os jogadores tentam adivinhar países com base em suas bandeiras. Com um design inspirado em interfaces de terminal e jogos hacker, o jogo oferece uma experiência única e envolvente de aprendizado sobre geografia mundial.
 
-After completing the installation, your environment is ready for Vuetify development.
+## ✨ Funcionalidades
 
-## ✨ Features
+- 🚩 Visualização de bandeiras de países
+- 💡 Sistema progressivo de dicas
+- ❤️ Sistema de vidas (6 tentativas)
+- 🎯 Feedback imediato das tentativas
+- 📝 Histórico de palpites
+- 🔄 Sistema de reinício do jogo
+- 🌍 Suporte para nomes de países em português e inglês
 
-- 🖼️ **Optimized Front-End Stack**: Leverage the latest Vue 3 and Vuetify 3 for a modern, reactive UI development experience. [Vue 3](https://v3.vuejs.org/) | [Vuetify 3](https://vuetifyjs.com/en/)
-- 🗃️ **State Management**: Integrated with [Pinia](https://pinia.vuejs.org/), the intuitive, modular state management solution for Vue.
-- 🚦 **Routing and Layouts**: Utilizes Vue Router for SPA navigation and vite-plugin-vue-layouts for organizing Vue file layouts. [Vue Router](https://router.vuejs.org/) | [vite-plugin-vue-layouts](https://github.com/JohnCampionJr/vite-plugin-vue-layouts)
-- ⚡ **Next-Gen Tooling**: Powered by Vite, experience fast cold starts and instant HMR (Hot Module Replacement). [Vite](https://vitejs.dev/)
-- 🧩 **Automated Component Importing**: Streamline your workflow with unplugin-vue-components, automatically importing components as you use them. [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components)
+## 🛠 Tecnologias Utilizadas
 
-These features are curated to provide a seamless development experience from setup to deployment, ensuring that your Vuetify application is both powerful and maintainable.
+- Vue.js 3
+- Vuetify 3
+- Restcountries API
+- Vue Router
+- Vuex
 
-## 💡 Usage
+## 💻 Instalação
 
-This section covers how to start the development server and build your project for production.
-
-### Starting the Development Server
-
-To start the development server with hot-reload, run the following command. The server will be accessible at [http://localhost:3000](http://localhost:3000):
-
+1. Clone o repositório:
 ```bash
-yarn dev
+git clone https://github.com/Soarezin/country-guess
 ```
 
-(Repeat for npm, pnpm, and bun with respective commands.)
-
-> Add NODE_OPTIONS='--no-warnings' to suppress the JSON import warnings that happen as part of the Vuetify import mapping. If you are on Node [v21.3.0](https://nodejs.org/en/blog/release/v21.3.0) or higher, you can change this to NODE_OPTIONS='--disable-warning=5401'. If you don't mind the warning, you can remove this from your package.json dev script.
-
-### Building for Production
-
-To build your project for production, use:
-
+2. Entre no diretório do projeto:
 ```bash
-yarn build
+cd country-guess
 ```
 
-(Repeat for npm, pnpm, and bun with respective commands.)
+3. Instale as dependências:
+```bash
+npm install
+```
 
-Once the build process is completed, your application will be ready for deployment in a production environment.
+4. Inicie o servidor de desenvolvimento:
+```bash
+npm run dev
+```
 
-## 💪 Support Vuetify Development
+## 🎮 Como Jogar
 
-This project is built with [Vuetify](https://vuetifyjs.com/en/), a UI Library with a comprehensive collection of Vue components. Vuetify is an MIT licensed Open Source project that has been made possible due to the generous contributions by our [sponsors and backers](https://vuetifyjs.com/introduction/sponsors-and-backers/). If you are interested in supporting this project, please consider:
+1. Ao iniciar o jogo, você verá a bandeira de um país aleatório
+2. Use as dicas fornecidas para tentar adivinhar o país
+3. Digite sua resposta no campo de entrada
+4. Você tem 6 tentativas para acertar
+5. A cada tentativa incorreta, você receberá uma nova dica
+6. O jogo aceita o nome do país em português ou inglês
 
-- [Requesting Enterprise Support](https://support.vuetifyjs.com/)
-- [Sponsoring John on Github](https://github.com/users/johnleider/sponsorship)
-- [Sponsoring Kael on Github](https://github.com/users/kaelwd/sponsorship)
-- [Supporting the team on Open Collective](https://opencollective.com/vuetify)
-- [Becoming a sponsor on Patreon](https://www.patreon.com/vuetify)
-- [Becoming a subscriber on Tidelift](https://tidelift.com/subscription/npm/vuetify)
-- [Making a one-time donation with Paypal](https://paypal.me/vuetify)
+## 🌐 API
 
-## 📑 License
-[MIT](http://opensource.org/licenses/MIT)
+O jogo utiliza a API Restcountries para obter informações dos países. As principais informações utilizadas são:
 
-Copyright (c) 2016-present Vuetify, LLC
+- Bandeira do país
+- Nome oficial e comum
+- Traduções
+- População
+- Continente
+- Fuso horário
+
+## 👥 Autores
+
+- João Victor Soares - [GitHub](https://github.com/Soarezin)
