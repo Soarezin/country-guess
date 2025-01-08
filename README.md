@@ -2,7 +2,6 @@
 
 Um jogo interativo de adivinhação de bandeiras com estilo terminal/hacker, desenvolvido com Vue.js e Vuetify.
 
-![Preview do Jogo](/api/placeholder/800/400)
 
 ## 📋 Índice
 
