@@ -311,7 +311,6 @@ export default {
   opacity: 0;
 }
 
-/* Terminal-style input styling */
 :deep(.v-text-field) {
   background-color: #333 !important;
   border-radius: 4px;
