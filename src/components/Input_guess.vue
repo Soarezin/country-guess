@@ -207,7 +207,6 @@ export default {
   50% { opacity: 0; }
 }
 
-/* Animação para o botão desabilitado */
 .terminal-button:disabled::after {
   content: "";
   position: absolute;
